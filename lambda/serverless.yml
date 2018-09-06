@@ -1,0 +1,9 @@
+service: weather-bot
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+
+functions:
+  getWeather:
+    handler: handler.getWeather

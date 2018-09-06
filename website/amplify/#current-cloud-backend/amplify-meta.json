@@ -1,0 +1,53 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "website-20180906061915-authRole",
+			"UnauthRoleArn": "arn:aws:iam::885121665536:role/website-20180906061915-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::885121665536:role/website-20180906061915-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "website-20180906061915-deployment",
+			"UnauthRoleName": "website-20180906061915-unauthRole",
+			"StackName": "website-20180906061915",
+			"StackId": "arn:aws:cloudformation:us-east-1:885121665536:stack/website-20180906061915/af3ba240-b16e-11e8-b2a5-500c286374d1"
+		}
+	},
+	"auth": {
+		"cognito9ec49cc8": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/website-20180906061915-deployment/amplify-cfn-templates/auth/cognito9ec49cc8-cloudformation-template.yml",
+				"logicalId": "authcognito9ec49cc8"
+			},
+			"lastPushTimeStamp": "2018-09-06T00:53:52.917Z",
+			"output": {
+				"AppClientSecret": "1hvj2hvaidekn8ashjfv57l9d1m4dh7nkpbocvqin8lan45otq4j",
+				"UserPoolId": "us-east-1_to1RXpSg7",
+				"AppClientIDWeb": "33c73u1beg8vv32jikfnjo87v7",
+				"AppClientID": "3ohc3kctvungpgtfr99s7tobph",
+				"IdentityPoolId": "us-east-1:aeab2fda-0e82-48f7-8b13-570a45131986",
+				"IdentityPoolName": "cognito9ec49cc8_identitypool_9ec49cc8",
+				"UserPoolName": "cognito9ec49cc8_userpool_9ec49cc8"
+			},
+			"lastPushDirHash": "irlkRywbipKy26mB+vSKHMQHIL0="
+		}
+	},
+	"hosting": {
+		"S3AndCloudFront": {
+			"service": "S3AndCloudFront",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/website-20180906061915-deployment/amplify-cfn-templates/hosting/template.json",
+				"logicalId": "hostingS3AndCloudFront"
+			},
+			"lastPushTimeStamp": "2018-09-06T00:53:52.917Z",
+			"output": {
+				"S3BucketSecureURL": "https://website-20180906062043--hostingbucket.s3.amazonaws.com",
+				"WebsiteURL": "http://website-20180906062043--hostingbucket.s3-website-us-east-1.amazonaws.com",
+				"Region": "us-east-1",
+				"HostingBucketName": "website-20180906062043--hostingbucket"
+			},
+			"lastPushDirHash": "5u5MsIGSOra2q1KSWwhXX5+0LrU="
+		}
+	}
+}
